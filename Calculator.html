@@ -1,0 +1,77 @@
+<!-- Calculator-->
+<!--By Jonathan Tran-->
+<!DOCTYPE html>
+<link rel = "stylesheet" href = "Calculator.css">
+<meta name = "viewport" content = "width = devive - width, initial-scale=1.0">
+
+<html>
+    <head>
+        <title> Calculator </title>
+        <meta name = "description" content = "Calculator">
+    </head>
+
+    <body>
+        <header style = "text-align: center; margin-left: -15px; margin-right: -15px; margin-top:-15px; margin-bottom:-15px; padding: 5px; background-color:lightskyblue">
+            <h1 style = "text-align: center;"> Calculator </h1>
+        </header>
+        <hr style = "margin-top: 13px; margin-right: -15px; margin-left: -15px; color:lightblue">
+
+        <div class = "container">
+            <div class = "calculator">
+                <form>
+                <div class = "classDisplay">
+                    <input type = "text" name = "display" style = "width: 300px;" readonly>
+                </div>
+
+                <div>
+                    <input type = "button" value = "AC" onclick = "display.value = ''">
+                    <input type = "button" value = "DEL" onclick = "display.value = display.value.toString.slice(0,-1)"> 
+                    <input type = "button" value = "**" onclick = "display.value +=  '**' ">
+                    <input type = "button" value = "/" onclick = "display.value += '/'">
+                </div>
+
+                <div>
+                    <input type = "button" value = "7" onclick = "display.value += '7'">
+                    <input type = "button" value = "8" onclick = "display.value += '8'">
+                    <input type = "button" value = "9" onclick = "display.value += '9'">
+                    <input type = "button" value = "*" onclick = "display.value += '*'">
+                </div>
+
+                <div>
+                    <input type = "button" value = "4" onclick = "display.value += '4'">
+                    <input type = "button" value = "5" onclick = "display.value += '5'">
+                    <input type = "button" value = "6" onclick = "display.value += '6'">
+                    <input type = "button" value = "-" onclick = "display.value += '-'">
+                </div>
+
+                <div>
+                    <input type = "button" value = "1" onclick = "display.value += '1'">
+                    <input type = "button" value = "2" onclick = "display.value += '2'">
+                    <input type = "button" value = "3" onclick = "display.value += '3'">
+                    <input type = "button" value = "+" onclick = "display.value += '+'">
+                </div>
+
+                <div>
+                    <input type = "button" value = "0" onclick = "display.value += '0'">
+                    <input type = "button" value = "." onclick = "display.value += '.'">
+                    <input type = "button" value = "%" onclick = "display.value += '*0.01*' ">
+                    <input type = "button" value = "=" onclick = "display.value = eval(display.value)">
+                </div>
+
+            </form>
+
+            </div>
+        </div>
+
+        <footer style = "text-align: center; margin-left: -15px; margin-right: -15px; margin-top:-15px; margin-bottom:-15px; padding: 25px; background-color:lightskyblue">
+            <hr style = "margin-top: -25px; margin-right: -25px; margin-left: -15px; color:lightblue">
+            <br>
+                <a href = "https://github.com/JonathanTran11/JonathanTranPortfolio.git"> Jonathan Tran's GitHub</a>
+                <br>
+                <br>
+                <a href = "https://www.linkedin.com/in/jonathan-tran-a0106a279/" > Jonathan Tran's LinkedIn </a>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,111 @@
+@keyframes transitionR{
+    from{
+        opacity: 0;
+        translateY: (-15px);
+    }
+
+    to{
+        opacity: 1;
+        translateY: (1px);
+
+    }
+}
+
+body{
+    animation: transitionR 0.85s;
+    background-image: url('wallpapersden.com_ai-magical-sunset-orange-x-blue_1952x1120.jpg');
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    height: 650px;
+    width: 400px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: lightskyblue;
+}
+
+/* .calculator form input edits the calculator box */
+.calculator form input{
+    height: 75px;
+    width: 75px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border-radius: 25px;
+    border-color: black;
+    background-color: lightslategray;
+}
+
+/* form. classDisplay edits the buttons and spacing of the buttpns*/
+form .classDisplay{
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* changes classDisplay input to align to the right */
+form .classDisplay input{
+    text-align: right;
+    flex: 1;
+    font-size: 30px; 
+}
+
+@media all and (max-width: 600px){
+    .calculator{
+        width: 400px;
+        height: 600px;
+    }
+
+    .calculator form input{
+        width: 70px; 
+        height: 70px;
+    }
+    
+}
+
+@media all and (max-width: 500px){
+   .calculator{
+    width: 350px;
+    height: 600px;
+   }
+
+   .calculator form input{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+   }
+
+   form .classDisplay input{
+    font-size: 24px;
+   }
+}
+
+@media all and (max-width: 400px){
+    .calculator{
+        width: 300px;
+        height: 500px;
+    }
+
+    .calculator form input{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    form .classDisplay input{
+        font-size: 18px;
+    }
+
+}
